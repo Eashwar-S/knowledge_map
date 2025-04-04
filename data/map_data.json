@@ -11,6 +11,12 @@
             "label": "Perception",
             "type": "topic",
             "content": ""
+        },
+        {
+            "id": "3",
+            "label": "Mapping",
+            "type": "topic",
+            "content": ""
         }
     ],
     "edges": []
