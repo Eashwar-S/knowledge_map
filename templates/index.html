@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+{% block content %}
+<div id="knowledge-map-container">
+    <h1>Knowledge Map (Graph: {{ graph }})</h1>
+    
+    <div id="graph-controls">
+        <h3>Select Knowledge Graph</h3>
+        <form id="select-graph-form">
+            <input type="text" name="graph" placeholder="Graph Name" required>
+            <button type="submit">Load Graph</button>
+        </form>
+        <h3>Create New Knowledge Graph</h3>
+        <form id="create-graph-form">
+            <input type="text" name="graph" placeholder="New Graph Name" required>
+            <button type="submit">Create Graph</button>
+        </form>
+    </div>
+    
+    <div id="controls">
+        <h3>Add Node</h3>
+        <form id="add-node-form">
+            <input type="hidden" name="graph" value="{{ graph }}">
+            <input type="text" name="id" placeholder="Node ID" required>
+            <input type="text" name="label" placeholder="Label" required>
+            <select name="type">
+                <option value="topic">Topic</option>
+                <option value="block">Block</option>
+                <option value="item">Item</option>
+            </select>
+            <button type="submit">Add Node</button>
+        </form>
+        <h3>Add Edge</h3>
+        <form id="add-edge-form">
+            <input type="hidden" name="graph" value="{{ graph }}">
+            <input type="text" name="from" placeholder="From Node ID" required>
+            <input type="text" name="to" placeholder="To Node ID" required>
+            <input type="text" name="label" placeholder="Edge Label" required>
+            <button type="submit">Add Edge</button>
+        </form>
+        <h3>Delete Node</h3>
+        <form id="delete-node-form">
+            <input type="hidden" name="graph" value="{{ graph }}">
+            <input type="text" name="node_id" placeholder="Node ID to Delete" required>
+            <button type="submit">Delete Node</button>
+        </form>
+        <h3>Delete Edge</h3>
+        <form id="delete-edge-form">
+            <input type="hidden" name="graph" value="{{ graph }}">
+            <input type="text" name="from" placeholder="From Node ID" required>
+            <input type="text" name="to" placeholder="To Node ID" required>
+            <button type="submit">Delete Edge</button>
+        </form>
+    </div>
+    
+    <div id="diagram"></div>
+    
+    <!-- Editor Modal -->
+    <div id="editor-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Edit Note</h2>
+            <div id="editor-container" style="height: 200px;"></div>
+            <button id="save-note">Save</button>
+        </div>
+    </div>
+</div>
+<script>
+    // Pass initial map data and current graph from the backend to JavaScript
+    var initialData = {{ data|safe }};
+    var currentGraph = "{{ graph }}";
+</script>
+{% endblock %}

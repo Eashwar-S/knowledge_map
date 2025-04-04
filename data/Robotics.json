@@ -1,0 +1,29 @@
+{
+    "nodes": [
+        {
+            "id": "1",
+            "label": "Robotics",
+            "type": "topic",
+            "content": ""
+        },
+        {
+            "id": "2",
+            "label": "Planning",
+            "type": "topic",
+            "content": ""
+        },
+        {
+            "id": "3",
+            "label": "Perception",
+            "type": "block",
+            "content": ""
+        }
+    ],
+    "edges": [
+        {
+            "from": "2",
+            "to": "1",
+            "label": "path"
+        }
+    ]
+}

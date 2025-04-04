@@ -1,0 +1,17 @@
+{
+    "nodes": [
+        {
+            "id": "1",
+            "label": "Robotics",
+            "type": "topic",
+            "content": ""
+        },
+        {
+            "id": "2",
+            "label": "Robotics",
+            "type": "topic",
+            "content": ""
+        }
+    ],
+    "edges": []
+}
