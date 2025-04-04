@@ -10,7 +10,7 @@
             "id": "2",
             "label": "Perception",
             "type": "topic",
-            "content": ""
+            "content": "<p>SLAM</p>"
         }
     ],
     "edges": [
