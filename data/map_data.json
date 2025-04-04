@@ -5,30 +5,7 @@
             "label": "Robotics",
             "type": "topic",
             "content": ""
-        },
-        {
-            "id": "2",
-            "label": "Perception",
-            "type": "topic",
-            "content": "<p>SLAM</p>"
-        },
-        {
-            "id": "3",
-            "label": "Planning",
-            "type": "topic",
-            "content": ""
         }
     ],
-    "edges": [
-        {
-            "from": "1",
-            "to": "2",
-            "label": ""
-        },
-        {
-            "from": "1",
-            "to": "3",
-            "label": ""
-        }
-    ]
+    "edges": []
 }
