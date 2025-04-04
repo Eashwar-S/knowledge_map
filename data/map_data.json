@@ -19,5 +19,11 @@
             "content": ""
         }
     ],
-    "edges": []
+    "edges": [
+        {
+            "from": "1",
+            "to": "2",
+            "label": "environment data"
+        }
+    ]
 }
