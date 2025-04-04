@@ -5,6 +5,12 @@
             "label": "Robotics",
             "type": "topic",
             "content": ""
+        },
+        {
+            "id": "2",
+            "label": "Perception",
+            "type": "topic",
+            "content": ""
         }
     ],
     "edges": []
