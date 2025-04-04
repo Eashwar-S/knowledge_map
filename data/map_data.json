@@ -11,6 +11,12 @@
             "label": "Perception",
             "type": "topic",
             "content": "<p>SLAM</p>"
+        },
+        {
+            "id": "3",
+            "label": "Planning",
+            "type": "topic",
+            "content": ""
         }
     ],
     "edges": [
